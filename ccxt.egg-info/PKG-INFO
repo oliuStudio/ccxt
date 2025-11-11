@@ -6,7 +6,6 @@ Author: oliuStudio
 License: MIT
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
-Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
@@ -18,7 +17,15 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: requests>=2.32.3
 Requires-Dist: pytz>=2024.1
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
 Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 # CCXT - Modified Version with Lighter Exchange Support
 
