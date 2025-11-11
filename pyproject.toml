@@ -8,6 +8,9 @@ version = "4.5.17"
 description = "Modified CCXT with Lighter Exchange Support"
 readme = "README.md"
 authors = [{name = "oliuStudio"}]
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.8"
-dependencies = []
+dependencies = ["requests"]
+
+[tool.setuptools]
+packages = ["ccxt"]
