@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -10,7 +10,28 @@ readme = "README.md"
 authors = [{name = "oliuStudio"}]
 license = "MIT"
 requires-python = ">=3.8"
-dependencies = ["requests"]
+dependencies = [
+    "requests>=2.32.3",
+    "pytz>=2024.1",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
 
 [tool.setuptools]
-packages = ["ccxt"]
+py-modules = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ccxt*"]
+exclude = ["test*", "*.test*"]
+
+[tool.setuptools.package-data]
+"*" = ["static_dependencies/**/*", "protobuf/**/*"]

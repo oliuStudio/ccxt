@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: ccxt
+Version: 4.5.17
+Summary: Modified CCXT with Lighter Exchange Support
+Author: oliuStudio
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+Requires-Dist: pytz>=2024.1
+Dynamic: license-file
+
+# CCXT - Modified Version with Lighter Exchange Support
+
+A modified version of the CCXT cryptocurrency trading library with additional support for Lighter Exchange.
+
+## Installation
+
+You can install this package directly from GitHub:
+
+```bash
+pip install git+https://github.com/oliuStudio/ccxt.git
+```
+
+## Features
+
+- All standard CCXT functionality
+- Additional support for Lighter Exchange
+- Compatible with Python 3.8+
+
+## Usage
+
+```python
+import ccxt
+
+# Create exchange instance
+exchange = ccxt.lighter({
+    'apiKey': 'your_api_key',
+    'secret': 'your_secret',
+    'sandbox': True,  # Use sandbox for testing
+})
+
+# Fetch markets
+markets = exchange.load_markets()
+print(markets)
+```
+
+## License
+
+MIT License

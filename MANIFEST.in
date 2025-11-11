@@ -1,0 +1,8 @@
+include README.md
+include LICENSE
+recursive-include ccxt *.py
+recursive-include ccxt/static_dependencies *
+recursive-include ccxt/protobuf *
+recursive-exclude ccxt/test *
+recursive-exclude ccxt/__pycache__ *
+recursive-exclude ccxt/*/__pycache__ *

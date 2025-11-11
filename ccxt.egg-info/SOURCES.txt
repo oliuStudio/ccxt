@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+ccxt.egg-info/PKG-INFO
+ccxt.egg-info/SOURCES.txt
+ccxt.egg-info/dependency_links.txt
+ccxt.egg-info/requires.txt
+ccxt.egg-info/top_level.txt
+test/tests_async.py
+test/tests_helpers.py
+test/tests_init.py
+test/tests_sync.py
